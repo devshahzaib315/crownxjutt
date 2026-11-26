@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#100509" />
+  <meta name="author" content="Shahzaib" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="keywords" content="Shahzaib, devshahzaib315, creative developer, web developer Pakistan, Three.js developer, WebGL, interactive websites, 3D web experiences, frontend developer" />
+  <meta name="twitter:creator" content="@devshahzaib315" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SIGMA — Shahzaib" />
+  <meta property="og:title" content="Shahzaib — Creative Developer | SIGMA" />
+  <meta property="og:description" content="Explore Shahzaib's digital portfolio: immersive Three.js, WebGL experiences, interactive websites and creative development. @devshahzaib315" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Shahzaib creative developer — red crown, metallic nameplate and cinematic black-red portfolio artwork" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shahzaib — Creative Developer | SIGMA" />
+  <meta name="twitter:description" content="Immersive Three.js, WebGL and interactive digital experiences by Shahzaib. @devshahzaib315" />
+  <meta name="twitter:image" content="assets/og-image.png" />
+  <meta name="description" content="SIGMA — Shahzaib, independent creative developer building immersive digital experiences, WebGL worlds and distinctive digital products." />
+  <title>SIGMA® — Shahzaib / Creative Developer & 3D Experiences</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Shahzaib","alternateName":"@devshahzaib315","identifier":{"@type":"PropertyValue","propertyID":"username","value":"devshahzaib315"},"jobTitle":"Creative Developer","description":"Independent creative developer building immersive digital experiences, Three.js and WebGL websites, and distinctive digital products.","email":"dev.shahzaib.92@gmail.com","knowsAbout":["Three.js","WebGL","JavaScript","Creative Development","Interactive Web Design","3D Web Experiences"]}
+  </script>
+
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"}}
+  </script>
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">S<span>®</span></div>
+    <div class="preloader-bottom"><span>BUILDING SOMETHING DIFFERENT</span><span id="loadNumber">00</span></div>
+    <div class="preloader-track"><span id="loadTrack"></span></div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="scroll-progress"><span id="scrollProgress"></span></div>
+  <div class="cursor" id="cursor"><span></span></div>
+
+  <header class="header" id="top">
+    <a class="brand" href="#top" aria-label="Sigma home">
+      <img class="brand-logo" src="assets/sigma-md-logo.png" alt="SIGMA — Built for real ones" />
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work"><span>01</span> Work</a>
+      <a href="#about"><span>02</span> About</a>
+      <a href="#services"><span>03</span> Expertise</a>
+      <a href="#contact"><span>04</span> Contact</a>
+    </nav>
+    <a class="header-availability" href="#contact"><i></i><span>AVAILABLE FOR PROJECTS</span><b>↗</b></a>
+    <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-top"><span>MENU / 2026</span><span>SHAHZAIB®</span></div>
+    <a href="#work"><span>01</span> Selected work <b>↗</b></a>
+    <a href="#about"><span>02</span> The approach <b>↗</b></a>
+    <a href="#services"><span>03</span> Expertise <b>↗</b></a>
+    <a href="#contact"><span>04</span> Get in touch <b>↗</b></a>
+    <p>INDEPENDENT BY NATURE. CREATIVE BY DESIGN.</p>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-topline wrap">
+        <div class="availability"><span class="availability-pulse"></span> OPEN TO SELECT COLLABORATIONS</div>
+        <div class="location">BASED IN PAKISTAN <span>·</span> WORKING WORLDWIDE</div>
+      </div>
+
+      <div class="hero-main wrap">
+        <div class="hero-copy">
+          <p class="hero-kicker reveal"><span class="kicker-line"></span> DESIGN ENGINEER / DIGITAL CRAFTSMAN</p>
+          <h1 id="heroTitle" class="hero-title">
+            <span class="hero-line line-one reveal">DIGITAL</span>
+            <span class="hero-line line-two reveal">WORLDS<span class="title-star">✳</span></span>
+            <span class="hero-line line-three reveal">THAT <em>MOVE.</em></span>
+          </h1>
+          <div class="hero-summary reveal">
+            <p>I turn ambitious ideas into <strong>immersive digital experiences</strong> — where design, code and motion become one.</p>
+            <a class="explore-link" href="#work" aria-label="Explore selected work"><span class="explore-icon">↓</span><span>SCROLL TO<br/>EXPLORE</span></a>
+          </div>
+          <div class="hero-tags reveal"><span>CREATIVE DEVELOPMENT</span><b>✳</b><span>THREE.JS / WEBGL</span><b>✳</b><span>INTERACTION DESIGN</span></div>
+        </div>
+
+        <div class="hero-art" id="heroArt">
+          <div class="art-grid"></div>
+          <div class="art-top-label"><span>FIG. 001 — FORM STUDY</span><span>REAL-TIME / WEBGL</span></div>
+          <canvas id="heroCanvas" aria-label="Interactive 3D liquid sculpture"></canvas>
+          <div class="art-fallback" aria-hidden="true"><div class="fallback-orb"></div></div>
+          <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+          <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
+          <div class="art-side-note">INTERACTIVE<br/>MATTER <span>↗</span></div>
+          <div class="art-coordinates"><span>24°51' N</span><span>67°00' E</span></div>
+          <div class="art-caption"><span>AN EXPERIMENT IN DIGITAL FORM</span><strong>01 <i>/</i> 04</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-bottom wrap"><span>SCROLL TO DISCOVER <b>↓</b></span><span class="hero-bottom-center">IDEAS MADE TANGIBLE THROUGH CODE.</span><span>© MMXXVI</span></div>
+      <div class="hero-watermark" aria-hidden="true">S.</div>
+    </section>
+
+    <section class="marquee-section" aria-label="Capabilities">
+      <div class="marquee-track">
+        <span>CREATIVE CODE</span><i>✳</i><span>IMMERSIVE WORLDS</span><i>✳</i><span>INTERACTION</span><i>✳</i><span>WEBGL / 3D</span><i>✳</i><span>CREATIVE CODE</span><i>✳</i><span>IMMERSIVE WORLDS</span><i>✳</i><span>INTERACTION</span><i>✳</i><span>WEBGL / 3D</span><i>✳</i>
+      </div>
+    </section>
+
+    <section class="work-section section wrap" id="work">
+      <div class="section-head reveal"><div class="section-index"><span>01</span> / SELECTED WORK</div><p>EXPERIMENTS, CONCEPTS<br/>AND DIGITAL PRODUCTS <b>↘</b></p></div>
+      <div class="work-intro reveal"><h2>MADE TO<br/><span>MAKE YOU LOOK.</span></h2><div><span class="mini-rule"></span><p>A selection of visual explorations and interface concepts. Each one is a playground for a different idea, interaction or digital experience.</p></div></div>
+
+      <div class="project-grid">
+        <a class="project project-feature reveal" href="#contact" aria-label="Discuss a project inspired by Vesper Atelier">
+          <div class="project-visual visual-velour">
+            <div class="project-topline"><span>CONCEPT STUDY / 001</span><span>3D COMMERCE</span></div>
+            <div class="velour-scene"><div class="velour-halo"></div><div class="velour-object"><span></span><i></i></div><div class="velour-orbit"></div><div class="velour-orbit orbit-2"></div></div>
+            <div class="velour-typography"><span>VESPER</span><small>OBJECTS, REIMAGINED.</small></div>
+            <div class="project-corner">↗</div>
+            <div class="project-bottomline"><span>ART DIRECTION / INTERACTIVE PRODUCT</span><span>2026</span></div>
+          </div>
+          <div class="project-meta"><div><span class="project-category">01 / DIGITAL COMMERCE</span><h3>Vesper <em>Atelier</em></h3><p>An editorial product world built around atmosphere, material and 3D storytelling.</p></div><span class="project-open">↗</span></div>
+        </a>
+
+        <a class="project project-tall reveal" href="#contact" aria-label="Discuss a project inspired by NexGen">
+          <div class="project-visual visual-nexgen">
+            <div class="project-topline"><span>CONCEPT STUDY / 002</span><span>PRODUCT ECOSYSTEM</span></div>
+            <div class="nexgen-ui">
+              <div class="ng-sidebar"><b>N.</b><span></span><span></span><span></span><span></span><i></i></div>
+              <div class="ng-main"><div class="ng-nav"><span>YOUR SPACE</span><b>● ● ●</b></div><div class="ng-greeting">Make room<br/><em>for more.</em></div><div class="ng-card-row"><div class="ng-card ng-card-a"><span>01 / CONNECT</span><b>Beyond<br/>boundaries.</b><i>↗</i></div><div class="ng-card ng-card-b"><span>02 / CREATE</span><b>Build your<br/>own signal.</b><i>✳</i></div></div><div class="ng-user"><i></i><span>YOUR COMMUNITY</span><b>↗</b></div></div>
+            </div>
+            <div class="project-corner">↗</div>
+            <div class="project-bottomline"><span>PRODUCT DESIGN / SYSTEMS</span><span>2026</span></div>
+          </div>
+          <div class="project-meta"><div><span class="project-category">02 / SOCIAL PLATFORM</span><h3>NexGen <em>Social</em></h3><p>A community interface exploring clarity, character and a more expressive product language.</p></div><span class="project-open">↗</span></div>
+        </a>
+
+        <a class="project project-wide reveal" href="#contact" aria-label="Discuss a project inspired by Aether">
+          <div class="project-visual visual-aether">
+            <div class="project-topline"><span>CONCEPT STUDY / 003</span><span>EXPERIMENTAL IDENTITY</span></div>
+            <div class="aether-lines"></div><div class="aether-sun"></div>
+            <div class="aether-word">AETHER<span>™</span></div><div class="aether-sub">A NEW PERSPECTIVE ON FORM.</div>
+            <div class="project-corner">↗</div>
+            <div class="project-bottomline"><span>BRAND WORLD / MOTION DIRECTION</span><span>2025—26</span></div>
+          </div>
+          <div class="project-meta"><div><span class="project-category">03 / BRAND EXPERIENCE</span><h3>Aether <em>Objects</em></h3><p>A speculative identity system where geometry, typography and motion shape one coherent world.</p></div><span class="project-open">↗</span></div>
+        </a>
+      </div>
+      <div class="work-footer reveal"><span>MORE IDEAS ARE ALWAYS IN DEVELOPMENT.</span><a href="#contact">HAVE A PROJECT IN MIND? <b>LET’S TALK ↗</b></a></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="about-inner wrap">
+        <div class="section-head reveal"><div class="section-index"><span>02</span> / THE PERSON BEHIND THE PIXELS</div><p>A LITTLE ABOUT<br/>MY POINT OF VIEW <b>↘</b></p></div>
+        <div class="about-layout">
+          <div class="about-display reveal"><span class="about-overline">DESIGN IS THE FEELING.</span><h2>CODE IS<br/>THE <em>MEDIUM.</em></h2><div class="about-stamp"><span>CURIOUS<br/>BY DEFAULT</span><b>✳</b></div></div>
+          <div class="about-copy reveal"><div class="about-number">S / 026</div><p class="about-lead">I’m Shahzaib — a creative developer who loves the space where <em>visual imagination meets engineering.</em></p><p class="about-body">I’m interested in more than making a website look good. I care about how it moves, how it responds, how it feels in someone’s hands and how every detail works together. I like experimenting with new tools, pushing browser capabilities and turning unusual ideas into usable experiences.</p><div class="about-signature"><span></span><b>THOUGHTFUL BY DESIGN. CURIOUS BY NATURE.</b></div></div>
+        </div>
+        <div class="about-facts reveal"><div><strong>3D<span>/</span></strong><small>SPATIAL THINKING</small></div><div><strong>UI<span>+</span></strong><small>HUMAN-CENTRED DESIGN</small></div><div><strong>∞</strong><small>ROOM TO EXPERIMENT</small></div><div class="fact-note"><span>THE GOAL?</span><p>Make the internet<br/>feel a little less ordinary.</p></div></div>
+      </div>
+    </section>
+
+    <section class="expertise-section section wrap" id="services">
+      <div class="section-head reveal"><div class="section-index"><span>03</span> / EXPERTISE</div><p>WHAT I BRING<br/>TO THE TABLE <b>↘</b></p></div>
+      <div class="expertise-intro reveal"><h2>THINK IT.<br/><em>MAKE IT.</em></h2><p>From the first sketch to the final interaction, I bring ideas to life with a mix of design sensitivity, technical curiosity and attention to detail.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card reveal"><div class="expertise-card-top"><span>01 / BUILD</span><b>↗</b></div><div class="expertise-icon icon-code"><span>&lt;</span><i>/&gt;</i></div><h3>Creative<br/>Development</h3><p>Responsive, high-performance websites with a distinctive point of view and a solid technical foundation.</p><div class="expertise-stack">HTML <i>·</i> CSS <i>·</i> JAVASCRIPT <i>·</i> REACT</div></article>
+        <article class="expertise-card reveal"><div class="expertise-card-top"><span>02 / EXPLORE</span><b>↗</b></div><div class="expertise-icon icon-3d"><span>◉</span><i>✳</i></div><h3>3D &<br/>WebGL Worlds</h3><p>Interactive 3D scenes, shader experiments and spatial moments that make the browser feel alive.</p><div class="expertise-stack">THREE.JS <i>·</i> WEBGL <i>·</i> GLSL</div></article>
+        <article class="expertise-card reveal"><div class="expertise-card-top"><span>03 / FEEL</span><b>↗</b></div><div class="expertise-icon icon-motion"><span>↝</span><i>〰</i></div><h3>Motion &<br/>Interaction</h3><p>Purposeful transitions, responsive feedback and small details that make an experience feel considered.</p><div class="expertise-stack">GSAP <i>·</i> MOTION <i>·</i> INTERACTION</div></article>
+        <article class="expertise-card reveal"><div class="expertise-card-top"><span>04 / SHAPE</span><b>↗</b></div><div class="expertise-icon icon-design"><span>◈</span><i>✳</i></div><h3>Digital<br/>Art Direction</h3><p>Visual systems, interface direction and brand-led websites that communicate with clarity and character.</p><div class="expertise-stack">UI / UX <i>·</i> FIGMA <i>·</i> IDENTITY</div></article>
+      </div>
+    </section>
+
+    <section class="process-section">
+      <div class="process-wrap wrap">
+        <div class="section-head reveal"><div class="section-index"><span>04</span> / THE METHOD</div><p>GOOD WORK IS<br/>NEVER AN ACCIDENT <b>↘</b></p></div>
+        <div class="process-heading reveal"><h2>FROM <em>IDEA</em><br/>TO IMPACT.</h2><p>A considered process gives ambitious ideas the room to become something real.</p></div>
+        <div class="process-steps">
+          <article class="process-step reveal"><span class="step-number">01</span><div><h3>Discover</h3><p>Understand the idea, the people and the opportunity. Find the signal in the noise.</p></div><span class="step-mark">◎</span></article>
+          <article class="process-step reveal"><span class="step-number">02</span><div><h3>Define</h3><p>Give the concept direction through structure, references and a clear visual language.</p></div><span class="step-mark">⌘</span></article>
+          <article class="process-step reveal"><span class="step-number">03</span><div><h3>Develop</h3><p>Bring the system to life with thoughtful design, precise engineering and purposeful motion.</p></div><span class="step-mark">✳</span></article>
+          <article class="process-step reveal"><span class="step-number">04</span><div><h3>Deliver</h3><p>Polish, test and refine until every part feels intentional and ready for the real world.</p></div><span class="step-mark">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit-section section wrap">
+      <div class="toolkit-heading reveal"><div class="section-index"><span>05</span> / THE TOOLKIT</div><h2>TOOLS CHANGE.<br/><em>THE CURIOSITY DOESN’T.</em></h2></div>
+      <div class="toolkit-bottom reveal"><p>I choose technology based on what the idea needs — keeping the balance between experimentation, performance and usability.</p><div class="toolkit-list"><span>THREE.JS</span><span>WEBGL</span><span>JAVASCRIPT</span><span>GLSL</span><span>GSAP</span><span>REACT</span><span>CSS / HTML</span><span>FIGMA</span><span>BLENDER</span><span>GIT</span></div></div>
+    </section>
+
+
+    <section class="faq-section section wrap" id="faq">
+      <div class="section-head reveal"><div class="section-index"><span>06</span> / GOOD TO KNOW</div><p>QUESTIONS, MEET<br/>STRAIGHT ANSWERS <b>↘</b></p></div>
+      <div class="faq-layout">
+        <div class="faq-intro reveal"><span class="faq-overline">BEFORE WE MAKE SOMETHING GREAT.</span><h2>CURIOUS?<br/><em>ASK AWAY.</em></h2><p>A few useful details about the way I work, the things I build and how we can get a project moving.</p><a class="faq-contact-link" href="#contact">HAVE ANOTHER QUESTION? <b>LET’S TALK ↗</b></a></div>
+        <div class="faq-list reveal">
+          <details class="faq-item"><summary><span class="faq-num">01</span><span class="faq-question">What kind of projects do you take on?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>I work on creative websites, interactive digital experiences, 3D/WebGL scenes, product interfaces and brand-led web experiences. The best fit is a project that values both thoughtful design and solid development.</p></div></details>
+          <details class="faq-item"><summary><span class="faq-num">02</span><span class="faq-question">Can you build a website with 3D and WebGL?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>Yes. Three.js and WebGL can be used for interactive objects, immersive hero sections, shader effects and spatial storytelling. I also consider loading performance, mobile behaviour and a graceful fallback.</p></div></details>
+          <details class="faq-item"><summary><span class="faq-num">03</span><span class="faq-question">Will my website work on mobile devices?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>Responsive behaviour is part of the build, not an afterthought. Layouts, navigation and interactions are adapted for smaller screens, with motion and 3D effects tuned to suit the device.</p></div></details>
+          <details class="faq-item"><summary><span class="faq-num">04</span><span class="faq-question">How do we get started?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>Send a short message about your idea, goals, references and any preferred deadline. We can then discuss the scope, priorities and a sensible next step.</p></div></details>
+          <details class="faq-item"><summary><span class="faq-num">05</span><span class="faq-question">Do you work with clients outside Pakistan?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>Yes. Projects can be discussed and coordinated remotely. Clear communication, shared references and agreed milestones help keep collaboration smooth across time zones.</p></div></details>
+          <details class="faq-item"><summary><span class="faq-num">06</span><span class="faq-question">How much does a project cost?</span><span class="faq-toggle" aria-hidden="true">+</span></summary><div class="faq-answer"><p>It depends on the scope, features, content and level of custom design or 3D work involved. Once I understand what you need, I can discuss an appropriate estimate before work begins.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-bg-grid"></div><div class="contact-glow"></div>
+      <div class="contact-inner wrap">
+        <div class="section-head reveal"><div class="section-index"><span>07</span> / YOUR TURN</div><p>HAVE SOMETHING<br/>IN MIND? <b>↘</b></p></div>
+        <div class="contact-main reveal"><span class="contact-kicker">GOOD THINGS START WITH A CONVERSATION.</span><h2>LET’S MAKE<br/><em>IT MATTER.</em></h2><a class="contact-email magnetic" href="mailto:dev.shahzaib.92@gmail.com" aria-label="Email Shahzaib at dev.shahzaib.92@gmail.com"><span>DEV.SHAHZAIB.92@GMAIL.COM</span><b>↗</b></a></div>
+        <div class="contact-bottom reveal"><p>Have an idea, a challenge or a project that deserves a little more imagination? Let’s make something memorable.</p><a class="contact-button magnetic" href="mailto:dev.shahzaib.92@gmail.com?subject=Let%E2%80%99s%20create%20something" aria-label="Start an email to dev.shahzaib.92@gmail.com"><span>START A CONVERSATION</span><b>↗</b></a></div>
+      </div>
+      <div class="contact-decoration" aria-hidden="true">S<span>®</span></div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <div class="footer-note"><span>INDEPENDENT CREATIVE DEVELOPER</span><small>DESIGNED WITH INTENT. BUILT WITH CURIOSITY.</small></div>
+    <div class="footer-links"><a href="#top">BACK TO TOP ↑</a><a href="mailto:dev.shahzaib.92@gmail.com" aria-label="Email dev.shahzaib.92@gmail.com">EMAIL ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a></div>
+    <div class="footer-copy">© 2026 SHAHZAIB. ALL RIGHTS RESERVED.</div>
+  </footer>
+
+  <section class="closing-brand" aria-label="SIGMA brand signature">
+    <a href="#top" class="closing-brand-link" aria-label="Back to top">
+      <img src="assets/sigma-md-logo.png" alt="SIGMA — Built for real ones" />
+    </a>
+    <span class="closing-brand-caption">INDEPENDENT CREATIVE DEVELOPER · PAKISTAN / WORLDWIDE</span>
+  </section>
+</body>
+</html>
